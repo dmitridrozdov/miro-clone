@@ -8,8 +8,8 @@ import { MoreHorizontal } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 
 import { api } from "@/convex/_generated/api";
-// import { Actions } from "@/components/actions";
-// import { Skeleton } from "@/components/ui/skeleton";
+import { Actions } from "@/components/actions";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useApiMutation } from "@/hooks/use-api-mutation";
 
 import { Footer } from "./footer";
@@ -73,7 +73,7 @@ export const BoardCard = ({
             className="object-fit"
           />
           <Overlay />
-          {/* <Actions
+          <Actions
             id={id}
             title={title}
             side="right"
@@ -85,7 +85,7 @@ export const BoardCard = ({
                 className="text-white opacity-75 hover:opacity-100 transition-opacity"
               />
             </button>
-          </Actions> */}
+          </Actions>
         </div>
         <Footer
           isFavorite={isFavorite}
