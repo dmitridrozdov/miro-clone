@@ -1,10 +1,12 @@
 "use client";
 import Info from './info'
+import Participants from './participants';
 
 const Canvas = () => {
   return (
-    <main className="absolute top-2 left-2 bg-white rounded-md px-1.5 h-12 flex item-center shadow-md">
+    <main className="h-full w-full relative bg-neutral-100 touch-none">
         <Info />
+        <Participants />
     </main>
   )
 }
